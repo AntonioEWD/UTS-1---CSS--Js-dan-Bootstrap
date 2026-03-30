@@ -4,13 +4,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTS - Nama Kamu</title>
+    <title>UTS - Antonio Eka Wellis</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tugas">Tugas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="bg-light">
+        <div class="container text-center pt-5">
+            <img src="Foto Anton.jpg" alt="Foto Profil"
+                class="foto-profil rounded-circle mb-3 border border-4 border-primary">
+            <h1 class="display-4">Antonio Eka Wellis Davidson</h1>
+            <p class="lead">NIM: 245314027</p>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="container">
+            <h2 class="text-center mb-4">Tentang Saya</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-5">
+                    <p>Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di Universitas Sanata Dharma.</p>
+                </div>
+                <div class="col-md-5">
+                    <p>Saya tinggal di Yogyakarta dan memiliki hobi bermain game serta berolahraga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Aku dan Temanku</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto Adek.jpg" class="card-img-top" alt="Foto 1">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto Andi.jpg" class="card-img-top" alt="Foto 2">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto Bam.jpg" class="card-img-top" alt="Foto 3">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto Bara.jpg" class="card-img-top" alt="Foto 4">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto El.jpg" class="card-img-top" alt="Foto 5">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Foto Jacob.jpg" class="card-img-top" alt="Foto 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pendidikan">
+        <div class="container">
+            <h2 class="text-center mb-4">Riwayat Pendidikan</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Nama Sekolah</th>
+                            <th>Alamat Sekolah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2010-2012</td>
+                            <td>TK Santa Maria</td>
+                            <td>Jl. Mastrip No.9, Klemunan, Wlingi, Kec. Wlingi, Kabupaten Blitar, Jawa Timur 66184</td>
+                        </tr>
+                        <tr>
+                            <td>2012-2018</td>
+                            <td>SDN 1 Semen</td>
+                            <td>Jl. Argowilis No.423, Semen, Kec. Semen, Kabupaten Kediri, Jawa Timur 64161</td>
+                        </tr>
+                        <tr>
+                            <td>2018-2021</td>
+                            <td>SMP 1 Gandusari</td>
+                            <td>Jl. Kelud No.1, Tegalrejo, Semen, Kec. Gandusari, Kabupaten Blitar, Jawa Timur 66187</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="tugas" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Tugas JS Dinamis</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <form id="formAwal">
+                            <div class="mb-3">
+                                <label class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="inputNama" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Alamat</label>
+                                <input type="text" class="form-control" id="inputAlamat" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Jumlah Bahasa</label>
+                                <input type="number" class="form-control" id="jmlBahasa" required min="1">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Jumlah Hobi</label>
+                                <input type="number" class="form-control" id="jmlHobi" required min="1">
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" id="btnOkeTahap1">Oke</button>
+                        </form>
+
+                        <div id="areaDinamis" class="mt-4"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Mengambil elemen tombol dan area penampung
+const btnOke1 = document.getElementById('btnOkeTahap1');
+const areaDinamis = document.getElementById('areaDinamis');
+
+// Variabel global (object) untuk menyimpan data user
+let dataUser = {
+    bahasa: [],
+    hobi: []
+};
+
+// ================= TAHAP 1 =================
+btnOke1.addEventListener('click', function () {
+    // 1. Ambil nilai angka dari inputan tahap 1
+    dataUser.nama = document.getElementById('inputNama').value;
+    dataUser.alamat = document.getElementById('inputAlamat').value;
+    dataUser.email = document.getElementById('inputEmail').value;
+    dataUser.jmlBahasa = parseInt(document.getElementById('jmlBahasa').value);
+    dataUser.jmlHobi = parseInt(document.getElementById('jmlHobi').value);
+
+    // Validasi sederhana
+    if (!dataUser.jmlBahasa || !dataUser.jmlHobi) {
+        alert("Harap isi semua data dengan benar!");
+        return;
+    }
+
+    // 2. Sembunyikan form tahap 1 agar rapi
+    document.getElementById('formAwal').style.display = 'none';
+
+    // 3. Merakit HTML baru untuk isian Bahasa dan Hobi
+    let htmlTahap2 = '<h4 class="text-center mb-4">Masukkan Nama Bahasa & Hobi</h4>';
+
+    for (let i = 1; i <= dataUser.jmlBahasa; i++) {
+        htmlTahap2 += `
+            <div class="mb-2">
+                <label class="form-label">Bahasa ${i}:</label>
+                <input type="text" class="form-control" id="namaBahasa${i}" required>
+            </div>
+        `;
+    }
+
+    htmlTahap2 += '<hr>';
+
+    for (let i = 1; i <= dataUser.jmlHobi; i++) {
+        htmlTahap2 += `
+            <div class="mb-2">
+                <label class="form-label">Hobi ${i}:</label>
+                <input type="text" class="form-control" id="namaHobi${i}" required>
+            </div>
+        `;
+    }
+
+    htmlTahap2 += '<button type="button" class="btn btn-success w-100 mt-3" id="btnOkeTahap2">Oke</button>';
+    areaDinamis.innerHTML = htmlTahap2;
+
+    // Panggil fungsi Tahap 2
+    setupTahap2();
+});
+
+// ================= TAHAP 2 =================
+function setupTahap2() {
+    const btnOke2 = document.getElementById('btnOkeTahap2');
+    btnOke2.addEventListener('click', function () {
+        
+        // 1. Simpan isian bahasa ke array
+        dataUser.bahasa = [];
+        for (let i = 1; i <= dataUser.jmlBahasa; i++) {
+            dataUser.bahasa.push(document.getElementById('namaBahasa' + i).value);
+        }
+
+        // 2. Simpan isian hobi ke array
+        dataUser.hobi = [];
+        for (let i = 1; i <= dataUser.jmlHobi; i++) {
+            dataUser.hobi.push(document.getElementById('namaHobi' + i).value);
+        }
+
+        // 3. Buat Radio Button (Bahasa) dan Checkbox (Hobi)
+        let htmlTahap3 = '<h4 class="text-center mb-4">Pilihan Bahasa & Hobi</h4>';
+        
+        // --- Radio Button Bahasa ---
+        htmlTahap3 += '<div class="mb-3"><label class="form-label fw-bold">Pilihan Bahasa :</label>';
+        dataUser.bahasa.forEach((bhs, index) => {
+            htmlTahap3 += `
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioBahasa" id="radioBhs${index}" value="${bhs}">
+                <label class="form-check-label" for="radioBhs${index}">${bhs}</label>
+            </div>`;
+        });
+        htmlTahap3 += '</div>';
+
+        // --- Checkbox Hobi ---
+        htmlTahap3 += '<div class="mb-3"><label class="form-label fw-bold">Pilihan Hobi :</label>';
+        dataUser.hobi.forEach((hb, index) => {
+            htmlTahap3 += `
+            <div class="form-check">
+                <input class="form-check-input cek-hobi" type="checkbox" id="cekHobi${index}" value="${hb}">
+                <label class="form-check-label" for="cekHobi${index}">${hb}</label>
+            </div>`;
+        });
+        htmlTahap3 += '</div>';
+
+        htmlTahap3 += '<button type="button" class="btn btn-warning w-100 mt-3" id="btnOkeTahap3">OK</button>';
+        areaDinamis.innerHTML = htmlTahap3;
+
+        // Panggil fungsi Tahap 3
+        setupTahap3();
+    });
+}
+
+// ================= TAHAP 3 (HASIL AKHIR) =================
+function setupTahap3() {
+    const btnOke3 = document.getElementById('btnOkeTahap3');
+    btnOke3.addEventListener('click', function() {
+        
+        // Ambil bahasa yang dipilih (hanya satu)
+        let bahasaTerpilih = "";
+        let radioBhs = document.getElementsByName('radioBahasa');
+        for(let radio of radioBhs) {
+            if(radio.checked) {
+                bahasaTerpilih = radio.value;
+                break;
+            }
+        }
+
+        // Ambil hobi yang dipilih (bisa lebih dari satu)
+        let hobiTerpilih = [];
+        let cekHobi = document.querySelectorAll('.cek-hobi:checked'); 
+        cekHobi.forEach(cek => {
+            hobiTerpilih.push(cek.value);
+        });
+
+        // Tampilkan Hasil Akhir pakai Alert / Card Bootstrap
+        let htmlHasil = `
+            <div class="alert alert-info mt-4">
+                <h4 class="alert-heading text-center">Pengumpulan UTS</h4>
+                <hr>
+                <p>Hallo, nama saya <strong>${dataUser.nama}</strong>, alamat <strong>${dataUser.alamat}</strong>, email <strong>${dataUser.email}</strong> saya mempunyai <strong>${dataUser.jmlBahasa}</strong> pilihan Bahasa yaitu <strong>${dataUser.bahasa.join(', ')}</strong>, dan saya memilih <strong>${bahasaTerpilih}</strong>.</p>
+                <p>Saya juga mempunyai <strong>${dataUser.jmlHobi}</strong> pilihan Hobi yaitu <strong>${dataUser.hobi.join(', ')}</strong>, dan saya memilih <strong>${hobiTerpilih.join(', ')}</strong>.</p>
+            </div>
+        `;
+
+        areaDinamis.innerHTML = htmlHasil;
+    });
+}
+    </script>
 </body>
 
 </html>
