@@ -1,0 +1,12 @@
+/* Memberikan jarak antar section agar scrollspy dan tampilan navbar terlihat rapi */
+section {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Mengatur ukuran foto profil di bagian Beranda */
+.foto-profil {
+    width: 200px;
+    height: 250px;
+    object-fit: cover; /* Ini yang membuat foto tidak gepeng */
+}
